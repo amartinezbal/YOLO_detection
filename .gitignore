@@ -1,0 +1,40 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+
+# Models and generated inference assets
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.mlmodel
+*.mlpackage/
+*_saved_model/
+*_labels.txt
+
+# Datasets, training runs, and calibration data
+/runs/
+/datasets/
+/data/
+*.npy
+*.npz
+*.cache
+
+# Local credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.idea/
+.vscode/
+.DS_Store
+.ruff_cache/

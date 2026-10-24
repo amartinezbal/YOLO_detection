@@ -1,0 +1,18 @@
+[project]
+name = "yolo-detection"
+version = "0.1.0"
+description = "Configurable YOLO fine-tuning and model export for mobile object detection."
+readme = "README.md"
+requires-python = ">=3.11.12"
+dependencies = [
+    "ultralytics>=8.4.67",
+]
+
+[project.optional-dependencies]
+export = [
+    "coremltools>=9.0",
+    "onnx>=1.21.0",
+    "onnx2tf>=1.28.8",
+    "onnxruntime>=1.26.0",
+    "tensorflow>=2.21.0",
+]
