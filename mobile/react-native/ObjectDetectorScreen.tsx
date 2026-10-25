@@ -9,8 +9,8 @@
  *   npm install react-native-worklets-core
  *
  * Asset placement:
- *   Android: android/app/src/main/assets/yolov8n_int8.tflite
- *   iOS:     ios/<AppName>/yolov8n.mlpackage  (add to Xcode target)
+ *   React Native: ./assets/yolov8n_int8.tflite (relative to this file)
+ *   iOS:          ios/<AppName>/yolov8n.mlpackage (add to Xcode target)
  */
 
 import React, { useCallback, useEffect, useRef, useState } from "react";
@@ -31,7 +31,7 @@ import { useTensorflowModel } from "react-native-fast-tflite";
 import { Worklets } from "react-native-worklets-core";
 
 // ─── Objects365 class names (365 classes) ────────────────
-// Full list: see objects365_classes.txt
+// Full list: see assets/labels/objects365_classes.txt
 const OBJECTS365_CLASSES: string[] = [
   "Person","Sneakers","Chair","Other Shoes","Hat","Car","Lamp","Glasses",
   "Bottle","Desk","Cup","Street Lights","Cabinet/shelf","Handbag/Satchel",

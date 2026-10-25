@@ -33,7 +33,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--imgsz", type=positive_int, default=640)
     parser.add_argument("--workers", type=nonnegative_int, default=4)
     parser.add_argument("--device", help="Training device, such as 0, cpu, or mps; autodetected by default.")
-    parser.add_argument("--project", type=Path, default=Path("runs/detect"))
+    parser.add_argument("--project", type=Path, default=Path("artifacts/training/runs"))
     parser.add_argument("--name", default="fine_tune")
     parser.add_argument("--lr0", type=positive_float, default=0.0001)
     parser.add_argument("--patience", type=positive_int, default=20)

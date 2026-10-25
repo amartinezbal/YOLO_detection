@@ -21,7 +21,7 @@ venv/
 *_labels.txt
 
 # Datasets, training runs, and calibration data
-/runs/
+/artifacts/
 /datasets/
 /data/
 *.npy
